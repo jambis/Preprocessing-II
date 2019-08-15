@@ -94,6 +94,20 @@
     justify-content: space-between;
     align-items: center;
 
+    @media @tablet {
+      flex-direction: column;
+      padding-left: 10%;
+      padding-right: 10%;
+
+      div.destination {
+        width: 100%;
+
+        div.btn {
+          .buttonStyle(100%, 4rem);
+        }
+      }
+    }
+
     @media @phone {
       flex-direction: column;
       padding-left: 10%;

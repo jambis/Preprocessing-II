@@ -15,3 +15,9 @@
   font-size: 2rem;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
+
+.hoverAnimation(@opacity, @y, @duration, @easetype) {
+  opacity: @opacity;
+  transform: translateY(@y);
+  transition: transform @duration @easetype, opacity @duration;
+}
