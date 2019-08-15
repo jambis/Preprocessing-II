@@ -1,13 +1,17 @@
 .home {
+  .content-intro {
+    border-bottom: 2px dashed @navigation-border;
 
+    h2 {
+      margin-top: 10px;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -49,13 +53,17 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: 2px dashed silver;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .buttonStyle(80%, 4rem);
+      }
     }
   }
-}// home
+} // home

@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -163,21 +163,50 @@ img {
   max-width: 100%;
   height: auto;
 }
+hr {
+  border: none;
+  border-bottom: 2px dashed #c0c0c0;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 1.2% auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .content-intro {
+  border-bottom: 2px dashed #c0c0c0;
+}
+.home .content-intro h2 {
+  margin-top: 10px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -198,7 +227,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -217,11 +246,21 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed silver;
   display: flex;
   justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17a2b8;
+  color: #ffffff;
+  width: 80%;
+  height: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
