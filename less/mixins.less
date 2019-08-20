@@ -1,1 +1,23 @@
 // Mixins in here
+.flex(@justify:flex-start, @align:flex-start) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.buttonStyle(@widthLen, @heightLen) {
+  background-color: @button-bg;
+  color: @main-bg;
+  width: @widthLen;
+  height: @heightLen;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.hoverAnimation(@opacity, @y, @duration, @easetype) {
+  opacity: @opacity;
+  transform: translateY(@y);
+  transition: transform @duration @easetype, opacity @duration;
+}
